@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FC26 Cheatsheet - Master Every Move</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">&#9917;</span>
+        <span>FC26 <span class="logo-accent">Cheatsheet</span></span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#skill-moves" class="nav-link">Skill Moves</a>
+        <a href="#passing" class="nav-link">Passing</a>
+        <a href="#shooting" class="nav-link">Shooting</a>
+        <a href="#defending" class="nav-link">Defending</a>
+        <a href="#set-pieces" class="nav-link">Set Pieces</a>
+        <a href="#goalkeeping" class="nav-link">Goalkeeping</a>
+        <a href="#tips" class="nav-link">Pro Tips</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-tag">The Ultimate Guide</p>
+      <h1>FC26 <span class="text-gradient">Cheatsheet</span></h1>
+      <p class="hero-desc">Master every skill move, pass, shot, and trick. Your complete reference for dominating on the pitch.</p>
+      <div class="hero-actions">
+        <a href="#skill-moves" class="btn btn-primary">Browse Moves</a>
+        <a href="#tips" class="btn btn-outline">Pro Tips</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">80+</span><span class="stat-label">Skill Moves</span></div>
+        <div class="stat"><span class="stat-num">12</span><span class="stat-label">Pass Types</span></div>
+        <div class="stat"><span class="stat-num">10</span><span class="stat-label">Shot Types</span></div>
+        <div class="stat"><span class="stat-num">6</span><span class="stat-label">Categories</span></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Quick Controls Reference -->
+  <section class="controls-bar">
+    <div class="container">
+      <h2 class="controls-title">Quick Controls Reference</h2>
+      <div class="platform-tabs">
+        <button class="platform-tab active" data-platform="ps">PlayStation</button>
+        <button class="platform-tab" data-platform="xbox">Xbox</button>
+        <button class="platform-tab" data-platform="pc">PC (Keyboard)</button>
+      </div>
+      <div class="controls-grid" id="controlsGrid">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Skill Moves -->
+  <section class="section" id="skill-moves">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Skill Moves</span>
+        <h2>Skill Moves &amp; Dribbling</h2>
+        <p>From basic body feints to 5-star showpieces. Filter by star rating to find moves your player can perform.</p>
+      </div>
+      <div class="search-wrapper">
+        <span class="search-icon">&#128269;</span>
+        <input type="text" class="search-input" id="searchInput" placeholder="Search any move, pass, shot, trick...">
+      </div>
+      <div id="searchResults" class="cards-grid" style="display:none;"></div>
+      <div id="skillMovesSection">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-star="all">All Stars</button>
+        <button class="filter-btn" data-star="1">1&#9733;</button>
+        <button class="filter-btn" data-star="2">2&#9733;</button>
+        <button class="filter-btn" data-star="3">3&#9733;</button>
+        <button class="filter-btn" data-star="4">4&#9733;</button>
+        <button class="filter-btn" data-star="5">5&#9733;</button>
+      </div>
+      <div class="cards-grid" id="skillMovesGrid">
+        <!-- Filled by JS -->
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Passing -->
+  <section class="section section-alt" id="passing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Passing</span>
+        <h2>Every Type of Pass</h2>
+        <p>Ground passes, through balls, lobbed passes, and more. Learn the right pass for every situation.</p>
+      </div>
+      <div class="cards-grid" id="passingGrid">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Shooting -->
+  <section class="section" id="shooting">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Shooting</span>
+        <h2>Shooting &amp; Finishing</h2>
+        <p>Power shots, finesses, chips, and volleys. Score from anywhere on the pitch.</p>
+      </div>
+      <div class="cards-grid" id="shootingGrid">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Defending -->
+  <section class="section section-alt" id="defending">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Defending</span>
+        <h2>Defending &amp; Tackling</h2>
+        <p>Jockeying, tackles, player switching, and defensive techniques to shut down any attack.</p>
+      </div>
+      <div class="cards-grid" id="defendingGrid">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Set Pieces -->
+  <section class="section" id="set-pieces">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Set Pieces</span>
+        <h2>Free Kicks, Corners &amp; Penalties</h2>
+        <p>Dead ball situations are free goal opportunities. Master the controls to convert every chance.</p>
+      </div>
+      <div class="cards-grid" id="setPiecesGrid">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Goalkeeping -->
+  <section class="section section-alt" id="goalkeeping">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Goalkeeping</span>
+        <h2>Goalkeeper Controls</h2>
+        <p>Manual GK movement, rushing out, and saving techniques.</p>
+      </div>
+      <div class="cards-grid" id="goalkeepingGrid">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Pro Tips -->
+  <section class="section" id="tips">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Pro Tips</span>
+        <h2>Tips &amp; Tricks</h2>
+        <p>Level up your game with these advanced strategies and hidden mechanics.</p>
+      </div>
+      <div class="tips-grid" id="tipsGrid">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon">&#9917;</span>
+          <span>FC26 Cheatsheet</span>
+        </div>
+        <p class="footer-text">Not affiliated with EA Sports. Community-built reference guide.</p>
+        <div class="footer-links">
+          <a href="#skill-moves">Skill Moves</a>
+          <a href="#passing">Passing</a>
+          <a href="#shooting">Shooting</a>
+          <a href="#defending">Defending</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
